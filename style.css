@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+/* font-family: 'Inter', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Soft-orange: hsl(35, 77%, 62%);
+  --Soft-red: hsl(5, 85%, 63%);
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+body {
+  background: hsl(36, 100%, 99%);
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.close-menu {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  list-style: none;
+}
+
+.nav-list a {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+}
+
+.nav-list a:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+}
+
+.content {
+  width: 65%;
+}
+
+.first-image {
+  background: url(assets/images/image-web-3-desktop.jpg) no-repeat center
+    center/cover;
+  height: 300px;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.first-p {
+  color: hsl(240, 100%, 5%);
+  width: 250px;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.second-p {
+  font-weight: lighter;
+  font-size: 15px;
+  width: 350px;
+  color: hsl(236, 13%, 42%);
+  padding-bottom: 1.5rem;
+}
+
+button {
+  background: hsl(5, 85%, 63%);
+  border: 0;
+  color: hsl(36, 100%, 99%);
+  padding: 0.7rem 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.5em;
+}
+
+button:hover {
+  background: hsl(240, 100%, 5%);
+}
+
+.new {
+  background: hsl(240, 100%, 5%);
+  height: 455px;
+  width: 32%;
+  padding: 1.5rem 1rem;
+}
+
+.new a {
+  text-decoration: none;
+}
+
+h1 {
+  color: hsl(35, 77%, 62%);
+  padding-bottom: 1.5rem;
+}
+
+span {
+  color: hsl(36, 100%, 99%);
+  font-weight: bold;
+}
+
+span:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+.third-p {
+  color: hsl(233, 8%, 79%);
+  font-size: 12px;
+  padding-top: 0.5rem;
+  width: 235px;
+}
+
+.line {
+  background: hsl(233, 8%, 79%);
+  height: 0.5px;
+  width: 95%;
+  margin: 2.5rem 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 4rem;
+  font-family: "Inter", sans-serif;
+  width: 92%;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.retro {
+  display: flex;
+}
+
+.laptop {
+  display: flex;
+}
+
+.gaming {
+  display: flex;
+}
+
+h2 {
+  color: hsl(233, 8%, 79%);
+  padding-bottom: 1rem;
+}
+
+.last-image {
+  height: 100px;
+  width: 70px;
+}
+
+.image-span {
+  color: hsl(240, 100%, 5%);
+}
+
+.image-span:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+.last-p {
+  color: hsl(236, 13%, 42%);
+  width: 180px;
+  font-size: 12px;
+  padding-top: 0.5rem;
+}
+
+.text {
+  padding-left: 1rem;
+}
+
+/* RESPONSIVE CSS */
+@media (max-width: 768px) {
+  .nav-menu {
+    padding: 2rem 1rem;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .close-menu {
+    display: block;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+    margin-left: 12rem;
+  }
+
+  .nav-list {
+    display: none;
+    background: hsl(36, 100%, 99%);
+    position: absolute;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    width: 70%;
+    height: 100vh;
+    padding-left: 2rem;
+  }
+
+  .nav-list a {
+    color: hsl(240, 100%, 5%);
+    font-size: 15px;
+    padding: 0 2rem;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .first-image {
+    background: url(assets/images/image-web-3-mobile.jpg) no-repeat center
+      center/cover;
+    width: 100%;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .first-p {
+    width: 300px;
+    padding-bottom: 1rem;
+  }
+
+  .second-p {
+    line-height: 20px;
+  }
+
+  button {
+    margin-bottom: 2rem;
+  }
+
+  .new {
+    width: 100%;
+  }
+
+  footer {
+    padding: 2rem 1rem;
+    flex-direction: column;
+  }
+
+  .retro {
+    margin-bottom: 2rem;
+  }
+  .laptop {
+    margin-bottom: 2rem;
+  }
+}
